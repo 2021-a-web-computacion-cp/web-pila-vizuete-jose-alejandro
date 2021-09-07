@@ -1,0 +1,25 @@
+{
+  "name": "ejercicios",
+  "version": "1.0.0",
+  "description": "Ejercicios en clase",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2021-a-web-computacion-cp/web-pila-vizuete-jose-alejandro.git"
+  },
+  "keywords": [
+    "ES"
+  ],
+  "author": "josePila",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2021-a-web-computacion-cp/web-pila-vizuete-jose-alejandro/issues"
+  },
+  "homepage": "https://github.com/2021-a-web-computacion-cp/web-pila-vizuete-jose-alejandro#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
