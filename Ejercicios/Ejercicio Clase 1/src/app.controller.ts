@@ -1,4 +1,4 @@
-import { Controller, Get, HttpCode} from '@nestjs/common';
+import { BadRequestException, Controller, Get, HttpCode, InternalServerErrorException } from '@nestjs/common';
 import { AppService } from './app.service';
 //Podemos empezar a crear metodos
 @Controller()
@@ -23,5 +23,13 @@ export class AppController {
   @HttpCode(200)
   getHello4(): string {
     return '{mensaje: "Hola json "}';
+  }
+  @Get('bad-request')
+  badRequest() {
+    throw new BadRequestException();
+  }
+  @Get('internal-error')
+  internalError() {
+    throw new InternalServerErrorException();
   }
 }
